@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html>
+    <body>
+        <script>
+
+            //Faça um algoritmo que calcule e escreva a média aritmética dos dois números inteiros informados pelo usuário e todos os números inteiros entre eles. Considere que o primeiro sempre será menor que o segundo.
+
+            numUm = parseInt(prompt("Insira o primeiro número: "));
+            numDois = parseInt(prompt("Insira o segundo número: "));
+            soma = 0; // soma dos números
+            divisor = 0; //contador dos números de 15 a 100
+
+            for (var i=numUm; i<=numDois; i++) {
+                soma+=i
+                divisor++
+            }
+
+            alert("A média aritmética é: " + soma/divisor)
+            
+        </script>
+    </body>
+</html>

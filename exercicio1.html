@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html>
+    <body>
+        <script>
+
+            //Escreva um algoritmo para ler 2 valores informados pelo usuário e se o segundo valor informado for igual ou menor que ZERO, deve ser lido um novo valor. Ou seja, para o segundo valor não pode ser aceito o valor zero, nem um valor negativo.  O seu programa deve imprimir o resultado da divisão do primeiro valor lido pelo segundo valor.
+
+            var numUm = parseFloat(prompt("Insira o primeiro valor:"));
+            var numDois = parseFloat(prompt("Insira o segundo valor:"));
+
+            if(numDois <= 0) {
+                var numDois = parseFloat(prompt("O segundo valor não pode ser menor ou igual a zero. Insira outro valor:"))
+            }
+
+            var calculo= numUm/numDois
+            alert("O resultado da divisão é: " + calculo.toFixed(2))
+
+            
+        </script>
+    </body>
+</html>

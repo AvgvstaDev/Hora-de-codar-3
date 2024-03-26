@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+    <body>
+        <script>
+
+            //Escreva um algoritmo para ler as notas de avaliações de um aluno, calcule e imprima a média (simples) desse aluno. Só devem ser aceitos valores válidos durante a leitura (0 a 10) para cada nota. São 6 notas ao total.
+            //Caso o valor informado para qualquer uma das notas esteja fora do limite estabelecido, deve ser solicitado um novo valor ao usuário. 
+            
+            valor=0; //cada nota 
+            soma=0; //a soma das notas 
+            divisor=6; //o divisor das notas
+            
+            
+            for(i=1; i <= divisor; i++){
+                valor= parseFloat(prompt("Digite a " + i + " nota:"));
+                soma+= valor
+
+                if (valor<0 || valor>10) {
+                    i--;
+                    soma-=valor
+                    alert("Informe um valor entre 0 e 10!")
+                    
+                }
+            }
+
+            alert("A média do aluno é: " + soma/divisor)
+
+        </script>
+    </body>
+</html>

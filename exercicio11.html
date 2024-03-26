@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html>
+    <body>
+        <script>
+
+            //Escreva um programa em que o usuário informe 10 valores e escreva quantos desses valores lidos estão entre os números 24 e 42 (incluindo os valores 24 e 42) e quantos deles estão fora deste intervalo.
+
+            var noIntervalo = 0; // quantidade de números no intervalo entre 24 e 42 
+            var foraIntervalo = 0; // quantidade de números fora do intervalo entre 24 e 42 
+
+            for( i = 1; i <= 10; i++) {
+                var num = prompt("Informe o " + i + "º valor:")
+
+                if(num >= 24 && num <= 42) {
+                    noIntervalo++
+                } else {
+                    foraIntervalo++
+                }
+            }
+            
+            alert("A quantidade de números no intervalo entre 24 e 42 (incluindo os valores 24 e 42) é: " + noIntervalo + "\n A quantidade de números fora do intervalo é: " + foraIntervalo)
+            
+
+        </script>
+    </body>
+</html>
