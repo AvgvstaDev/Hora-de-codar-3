@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+
+            //Vamos criar uma lista de compras. 
+            //Crie uma array de frutas, exiba-a ao usuário e, em seguida, peça ao usuário para digitar o nome de uma das frutas.
+            //Caso a fruta esteja no array, remova-a e exiba a mensagem "Fruta foi retirada da lista". 
+            //Peça novamente para o usuário digitar o nome de uma fruta para ser removida. 
+            //Sempre que o usuário procurar por uma fruta que não está no array exiba a mensagem "Fruta indisponível no nosso mercado". 
+            //Quando o array não possuir mais itens dentro de si, escreva "Lista de compras finalizada".
+
+            var mercado = ["banana", "melancia", "caqui", "morango", "tomate"];
+            alert("Essas são as frutas disponíveis em nosso mercado: " + mercado.toString())
+
+            while(mercado.length !== 0) {
+                
+                var remover = prompt("Digite o nome de uma fruta para ser removida: ")
+                
+
+                if(mercado.includes(remover)) {
+
+                    var i = mercado.indexOf(remover) 
+                    console.log(i)
+                    mercado.slice(i)
+
+                    alert("Fruta removida com sucesso! \nNosso mercado ainda inclui " + mercado.toString ())
+
+                } else {
+                    alert("Fruta indisponível no nosso mercado.")
+                    
+                }
+            }
+
+            alert("Lista de compras finalizada!")
+
+        </script>
+    </body>
+</html>
